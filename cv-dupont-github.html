@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style_cv_dupont.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Portfolio eytahn</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h2>
+          <a href="#home" id="home">eytahn</a>
+        </h2>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="hero">
+      <h1 class="animate__animated animate__fadeInDown">I'm eytahn</h1>
+      <p class="animate__animated animate__fadeInUp">I'm a CS student</p>
+      <a href="#contact" class="cta">Contact me</a>
+    </div>
+  </header>
+  <section id="about">
+    <div class="about">
+      <h2 class="animate__animated animate__fadeInDown">About me</h2>
+      <p class="animate__animated animate__fadeInUp">
+        Je suis Eytahn, j'ai 18 ans. Je suis étudiant en informatique à
+        l'Université d'Evry. J'ai commencé à coder il y a 3 ans et je suis
+        tombé amoureux de la programmation. J'ai une passion pour le développement
+        web et l'intelligence artificielle. J'aime aussi la musique et les jeux vidéos.
+      <div class="photo-round">
+        <img src="photo-eytahn-cv.jpeg" alt="Un homme noir avec des contours carrés">
+      </div>
+      </p>
+    </div>
+  </section>
+  <!-- la section des projets -->
+  <section id="skills">
+    <div class="skills">
+      <h2 class="animate__animated animate__fadeInDown">Skills</h2>
+      <div class="skills-container">
+        <div class="skill animate__animated animate__fadeInUp">
+          <h3>HTML</h3>
+          <div class="bar">
+            <div class="html"></div>
+          </div>
+        </div>
+        <div class="skill animate__animated animate__fadeInUp">
+          <h3>CSS</h3>
+          <div class="bar">
+            <div class="css animate__animated animate__fadeInLeft"></div>
+          </div>
+        </div>
+        <div class="skill animate__animated animate__fadeInUp">
+          <h3>C</h3>
+          <div class="bar">
+            <div class="js animate__animated animate__fadeInLeft"></div>
+          </div>
+        </div>
+        <div class="skill animate__animated animate__fadeInUp">
+          <h3>Python</h3>
+          <div class="bar">
+            <div class="python animate__animated animate__fadeInLeft">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projets">
+    <div class="projects">
+      <h2 class="animate__animated animate__fadeInDown">Projects</h2>
+      <div class="project animate__animated animate__fadeInUp">
+        <img src="Take A Kick.png" alt="Projet 1" id="takeakick">
+        <h3>Projet 1 </h3>
+        <p>
+          J'ai crée un site web pour aider les basketteurs à mieux chosir leur chaussures de basket.
+          (2022-2023)
+        </p>
+      </div>
+      <div class="project animate__animated animate__fadeInUp">
+        <img src="2048_logo.svg.png" alt="Projet 2" id="d2048_c">
+        <h3>Projet 2 </h3>
+        <p>
+          J'ai crée un 2048 en C pour mon projet de fin de semestre.
+        </p>
+      </div>
+      <div class="project animate__animated animate__fadeInUp">
+        <img src="ai-logo-png-transparent.png" alt="Projet 3" id="IA">
+        <h3>Projet 3 (à venir) </h3>
+        <p>
+          Créer une IA pour jouer à un jeu de plateau. (en cours)
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- on passe à comment me contacter -->
+
+  <section id="contact">
+    <div class="contact">
+      <h2 class="animate__animated animate__fadeInDown">Contact</h2>
+      <p class="animate__animated animate__fadeInUp">
+        Pour me contacter pour tout projet ou pour discuter, vous pouvez m'envoyer un mail
+        <a href="mailto:louis.eytahn@gmail.com">ici </a> ou me contacter sur les réseaux sociaux.
+        Je serais heureux de discuter avec vous, et de vos projets.
+      </p>
+      <a href="mailto:louis.eytahn@gmail.com" target="_blank">
+        <div class="tooltip-container">
+          <span class="tooltip">❤️❤️</span>
+          <span class="text">🫵🏾</span>
+        </div>
+      </a>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2021 eytahn</p>
+    <a href="#home">Retour en haut ⬆️</a>
+  </footer>
+</body>
+<script>
+  const menuHamburger = document.querySelector(".menu-hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  menuHamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("mobile-menu");
+  });
+
+  document.getElementsByClassName("tooltip-container").addEventListener("click", () => {
+
+  });
+
+</script>
+
+</html>
